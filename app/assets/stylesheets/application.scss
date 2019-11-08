@@ -1,0 +1,159 @@
+@import "./reset";
+
+@import "font-awesome-sprockets";
+@import "./font-awesome";
+
+.left{
+  width: 300px;
+  float: left;
+  position: fixed;
+  &__top{
+    background-color: #253141;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    &__name{
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    &__icon{
+      display: flex;
+      color: white;
+      &__link{
+        color: white;
+      }
+    
+    }
+  }
+  &__content{
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 20px 20px 0;
+    color: #fff;
+    font-weight: bold;
+    &__text1{
+      padding-bottom: 40px;
+      &__g{
+        font-size: 15px;
+      }
+      &__m{
+        font-size: 11px;
+      }
+
+    }
+    &__text2{
+      &__g{
+        font-size: 15px;
+      }
+      &__m{
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.main{
+  float: right;
+  width: calc(100vw - 300px);
+  position: fixed;
+  left: 300px;
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #eeeeee;
+    padding: 0 40px;
+    height: 100px;
+    &__left{
+      &__name{
+        padding: 35px 0 15px;
+        font-size: 20px;
+        color: #333333
+      }
+      &__member{
+        font-size: 12px ;
+        color: #999999;
+      }
+    }
+    &__right{
+      padding-top: 28px;
+      &__edit{
+        border: solid 1px skyblue;
+        padding: 8px 20px;
+        color: skyblue;
+        align-items: center;
+      }
+    }
+  }
+  &__content{
+    width: calc(100vw - 300px);
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    padding: 0 0 0 40px;
+    &__first{
+      padding: 46px 0 10px;
+      display: flex;
+      justify-content: left;
+      &__name{
+        padding-right: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #434A54;
+      }
+      &__date{
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+    &__second{
+      font-size: 14px;
+      color: #434A54;
+    }
+  }
+  &__form{
+    background-color: #ddd;
+    height: 90px;
+    padding: 5px 40px 0;
+    &__bar{
+      background-color: #ddd;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin: 16px auto;
+      &__text{
+        display: flex;
+        position: relative;
+        margin-right: 20px;
+        &__write{
+          padding-left: 10px;
+          &__message{
+            width: 800px;
+            height: 50px;
+            padding-left: 10px;
+          }
+        }
+        &__icon{
+          position: absolute;
+          right: 25px;
+          top: 10px;
+          font-size: 20px;
+          &__file{
+            display: none;
+          }
+        }
+
+      }
+      &__send{
+        background-color: #38AEF0;
+        color: white;
+        line-height: 45px;
+        padding: 0 20px;
+
+      }
+    }
+  }
+}
+  
+          
