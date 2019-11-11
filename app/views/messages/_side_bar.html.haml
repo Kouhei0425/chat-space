@@ -1,26 +1,20 @@
-.left
- .left__top
-  .left__top__name
-   kouhei
-  .left__top__icon
-   =link_to do
-    =icon'fas', 'edit',class: 'left__top__icon__link'
-   =link_to do
-    =icon'fas', 'cog',class: 'left__top__icon__link'
- .left__content
-  .left__content__text1
-   .left__content__text1__g
-    test1
-   .left__content__text1__m
-    まだメッセージがありません
-  .left__content__text2
-   .left__content__text2__g
-    test2
-   .left__content__text2__m
-    まだメッセージがありません
-
-
-
- 
-
+.side-bar
+  .header
+    %h3.header__name
+      = current_user.name
+    %ul.header__lists
+      %li.list
+        = link_to new_group_path do
+          = icon('fas', 'edit', class: 'icon')
+      %li.list
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
+  .groups
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
 
