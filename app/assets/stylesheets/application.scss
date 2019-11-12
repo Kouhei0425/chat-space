@@ -1,10 +1,13 @@
-@import "./reset";
+@import "colors";
+@import "font-size";
+@import "reset";
+@import "mixin";
+@import "vendor_prefix";
+@import "side_bar";
+@import "chat";
+@import "messages.scss";
 @import "font-awesome-sprockets";
 @import "./font-awesome";
 @import "user";
-@import "colors";
 @import "flash";
 @import "group";
-@import "side_bar";
-@import "chat";
-
