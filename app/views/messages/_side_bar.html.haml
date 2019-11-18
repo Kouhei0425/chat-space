@@ -5,10 +5,10 @@
     %ul.header__lists
       %li.list
         = link_to new_group_path do
-          = icon('fas', 'edit', class: 'icon')
+          = fa_icon 'edit', class: 'icon'
       %li.list
         = link_to edit_user_path(current_user) do
-          = icon('fas', 'cog', class: 'icon')
+          = fa_icon 'cog', class: 'icon'
   .groups
     - current_user.groups.each do |group|
       .group
