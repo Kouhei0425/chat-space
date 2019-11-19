@@ -36,7 +36,7 @@ $(function(){
       var html = buildHTML(message);
       $('.messages').append(html);
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast'); 
-      $('form')[0].reset();
+      $('.new_message')[0].reset();
     })
     .fail(function(){
       alert('メッセージが入力されていません');
